@@ -1,6 +1,6 @@
 {
   "name": "webpack-threejs",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple boilerplate to start projects with Three.js using webpack.",
   "keywords": [
     "three.js",
@@ -9,8 +9,8 @@
     "glslify"
   ],
   "author": {
-    "name": "Bruno Imbrizi",
-    "url": "http://brunoimbrizi.com"
+    "name": "DIMA",
+    "url": "http://agencydima.com"
   },
   "license": "MIT",
   "sideEffects": false,
