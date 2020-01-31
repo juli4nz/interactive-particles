@@ -1,6 +1,4 @@
 import 'three';
-import { TweenLite } from 'gsap/TweenMax';
-
 import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
 
@@ -22,6 +20,7 @@ export default class WebGLView {
     this.initParticles();
     this.initControls();
 
+    // ~~ = Math.floor
     const rnd = ~~(Math.random() * this.samples.length);
     this.goto(rnd);
   }
