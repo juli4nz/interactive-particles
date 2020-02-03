@@ -2,8 +2,6 @@ import gsap from 'gsap';
 import * as THREE from 'three';
 import TouchTexture from './TouchTexture';
 import glslify from 'glslify';
-import vertShader from '../../../shaders/particleVert.js';
-import fragShader from '../../../shaders/particleFrag.js';
 
 //const glslify = require('glslify');
 
@@ -76,8 +74,8 @@ export default class Particles {
 
     const material = new THREE.RawShaderMaterial({
       uniforms,
-      vertexShader: glslify(vertShader), //require('../../../shaders/particle.vert')),
-      fragmentShader: glslify(fragShader), //require('../../../shaders/particle.frag')),
+      vertexShader: glslify(require('../../../shaders/particle.vert')),
+      fragmentShader: glslify(require('../../../shaders/particle.frag')),
       depthTest: false,
       transparent: true
       // blending: THREE.AdditiveBlending

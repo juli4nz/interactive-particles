@@ -2,7 +2,7 @@ import 'three';
 import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
 
-const glslify = require('glslify');
+//const glslify = require('glslify');
 
 export default class WebGLView {
   constructor(app) {
